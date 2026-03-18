@@ -1,5 +1,5 @@
 import { getTechnologyNews } from "./api/news.api";
-import { renderNewsCard, renderNewsCardSkeleton } from "./ui/newsCard.ui";
+import { renderNewsCard, renderNewsCardSkeleton } from "./components/newsCard.component";
 
 const newsContainer: Element | null = document.getElementById("news");
 
