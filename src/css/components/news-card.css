@@ -1,0 +1,32 @@
+.news-card {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.15rem;
+
+  &.skeleton {
+    background-color: #EAEAEA;
+    background-image: linear-gradient(
+      to right,
+      #EAEAEA 33%,
+      #DDDDDD 50%,
+      #EAEAEA 66%
+    );
+    background-size: 400%;
+    animation: shimmer 1250ms infinite linear;
+    min-block-size: 12rem;
+
+    & > * {
+      display: none;
+    }
+  }
+}
+
+@keyframes shimmer {
+  from {
+    background-position: 100% 100%;
+  }
+
+  to {
+    background-position: 0 0;
+  }
+}
